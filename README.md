@@ -1,12 +1,15 @@
 # netmon-java
 
-Simple packet capture / network monitoring CLI written in Java using Pcap4J (libpcap).
+Simple packet capture / network monitoring CLI written in Java using Pcap4J.
+
+Pcap4J is the Java library your code imports; it talks to the native packet capture library underneath:
+libpcap (macOS/Linux) or Npcap (Windows).
 
 ## Requirements
 
 - Java (JDK) 25+
 - Maven 3.9+
-- Packet capture library
+- Native packet capture library (used by Pcap4J)
   - macOS / Linux: `libpcap` (usually already present)
   - Windows: Npcap (WinPcap API compatible mode)
 
